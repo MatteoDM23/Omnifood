@@ -27,7 +27,7 @@ html {
     /* margin: 0 auto; equivalent to the command above (top-bottom: 0, left-right: auto) */
 }
 
-/*  the class btn style will be shared, while btn-full and btn-ghost will be specific 
+    /*  the class btn style will be shared, while btn-full and btn-ghost will be specific 
     LINK-VISITED: 'link' and 'visited' provides the same style to both the <a> states (before and after visiting) */
 .btn:link,
 .btn:visited {
@@ -54,7 +54,7 @@ html {
     color: #d35400;
 }
 
-/*  HOVER-ACTIVE: as well as for link-visited, we should implement some extra style for the hover-active state */
+    /*  HOVER-ACTIVE: as well as for link-visited, we should implement some extra style for the hover-active state */
 .btn:hover,
 .btn:active {
     background-color: #ffb17e;
@@ -104,3 +104,38 @@ header {
     transform: translate(-30%, -50%); /* trick to correct the LEFT and TOP above */
 }
 
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;       /* margin-top for both logo and navbar are static and based on personal prefrence */
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;  /* the standard way to format the navigation */
+    margin-left: 40px;      /* the standard way to format the navigation */
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%; /* (16px) */
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #d35400;
+    transition: color 0.2s, border-bottom 0.2s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%; /* (16px) */
+}
