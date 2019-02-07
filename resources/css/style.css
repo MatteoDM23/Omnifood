@@ -1,8 +1,11 @@
-/* all the margins and paddings are gone */
+/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  BASIC SETUP */
+/*  ------------------------------------------------------------------------------------------------------------------------- */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* all the margins and paddings are gone */
+    padding: 0; /* all the margins and paddings are gone */
+    box-sizing: border-box; /* all the margins and paddings are gone */
 }
 
 html {
@@ -14,11 +17,77 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  REUSABLE COMPONENTS */
+/*  ------------------------------------------------------------------------------------------------------------------------- */
+
 .row {
     max-width: 1140px;
     margin: 0 auto 0 auto; /* top right bottom left (responsive side-stretching) */
     /* margin: 0 auto; equivalent to the command above (top-bottom: 0, left-right: auto) */
 }
+
+/*  the class btn style will be shared, while btn-full and btn-ghost will be specific 
+    LINK-VISITED: 'link' and 'visited' provides the same style to both the <a> states (before and after visiting) */
+.btn:link,
+.btn:visited {
+    display: inline-block; /* <a> is an in-line element, I need to convert it into a bloc for more customisation */
+    padding: 10px 30px 10px 30px; /* top right buttom left */
+    border-radius: 200px;
+    text-decoration: none; /* avoid <a> decorations */
+    font-weight: 300;
+    color: #ffffff; /* "color" on its own refers to the font!!! not to the background */
+    transition: background-color 0.2s, border 0.2s, color 0.2s; /* CSS3 for transitions when hovering */
+} 
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #d35400;
+    border: 1px solid #d35400; /* thickness - type - color: I need to add it because the ghost one will be 1px bigger otherwise 
+                                    BOX MOODEL: heigth and width of an element is given by: content + padding + margin*/
+    margin-right: 15px;
+                                }
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #ffffff; /* thickness - type - color */
+    color: #d35400;
+}
+
+/*  HOVER-ACTIVE: as well as for link-visited, we should implement some extra style for the hover-active state */
+.btn:hover,
+.btn:active {
+    background-color: #ffb17e;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #ffb17e;
+    border: 1px solid #ffb17e;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: #ffb17e;
+    border: 1px solid #ffb17e;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0; /* due to the normalization file, h1 has a top-bottom white stroke we need to get rid of 
+                (the background image does not cover the whpole display size otherwise */
+    color: #ffffff;
+    font-size: 180%; /* this is relative to the 20px in line 12*/
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+
+/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  HEADER */
+/*  ------------------------------------------------------------------------------------------------------------------------- */
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
@@ -30,13 +99,8 @@ header {
 .hero-text-box {
     position: absolute; /* necessary to set the title horizontally and vertically*/
     max-width: 1140px;
-    top: 40%;
-    left: 40%;
-    transform: translate(-40%, -40%); /* trick to correct the top and left above */
-}
-
-h1 {
-    margin: 0; /* due to the normalization file, h1 has a top-bottom white stroke we need to get rid of (the background image does not cover the whpole display size otherwise */
-    font-size: 180%; /* this is relative to the 20px in line 12*/
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%); /* trick to correct the LEFT and TOP above */
 }
 
