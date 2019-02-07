@@ -39,3 +39,4 @@ h1 {
     margin: 0; /* due to the normalization file, h1 has a top-bottom white stroke we need to get rid of (the background image does not cover the whpole display size otherwise */
     font-size: 180%; /* this is relative to the 20px in line 12*/
 }
+
