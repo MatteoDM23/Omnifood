@@ -8,8 +8,34 @@
 html {
     background-color: #ffffff;
     color: #222222;
-    font-family: 'Work Sans', 'Arial', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 20px; /* THIS IS THE ONLY FONT SIZE FIXED. ALL THE FOLLOWINGS WILL BE ADAPTING RELATIVELY TO THIS ONE PARTICULAR */
     font-weight: 400;
     text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto 0 auto; /* top right bottom left (responsive side-stretching) */
+    /* margin: 0 auto; equivalent to the command above (top-bottom: 0, left-right: auto) */
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+    height: 100vh; /* 100% of the view display */
+    background-size: cover; /* otherwise set to 'fill' */
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute; /* necessary to set the title horizontally and vertically*/
+    max-width: 1140px;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%); /* trick to correct the top and left above */
+}
+
+h1 {
+    margin: 0; /* due to the normalization file, h1 has a top-bottom white stroke we need to get rid of (the background image does not cover the whpole display size otherwise */
+    font-size: 180%; /* this is relative to the 20px in line 12*/
 }
