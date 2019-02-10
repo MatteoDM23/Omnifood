@@ -17,6 +17,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*  ************************************************************************************************************************* */
 /*  REUSABLE COMPONENTS */
 /*  ************************************************************************************************************************* */
@@ -142,6 +151,26 @@ p {
 .box p {
     line-height: 125%;
 }
+
+/* ------------------------------*/
+/* LINK */
+/* ------------------------------*/
+
+a:link,
+a:visited {
+    color: #f56200;
+    text-decoration: none;
+    padding-bottom: 1px;
+    transition: opacity 0.2s, border-bottom 0.2s, color 0.2s; /* CSS3 for transitions when hovering */
+}
+
+a:active,
+a:hover {
+    color: #8f3900;
+    border-bottom: 1px solid #f56200;
+    opacity: 0.9;
+}
+
 /*  ************************************************************************************************************************* */
 /*  HEADER */
 /*  ************************************************************************************************************************* */
@@ -198,7 +227,7 @@ header {
 }
 
 /*  ************************************************************************************************************************* */
-/*  SECTION 1 */
+/*  section 1: "section-features" */
 /*  ************************************************************************************************************************* */
 
 .box {
@@ -216,12 +245,13 @@ header {
 }
 
 /*  ************************************************************************************************************************* */
-/*  SECTION 2 */
+/*  section 2: "section-meals" */
 /*  ************************************************************************************************************************* */
 
 .section-meals {
     padding: 0px 0px 0px 0px; /* look at the default values @html */
 }
+
 .meals-showcase {
     list-style: none;
     width: 100%;
@@ -250,3 +280,108 @@ header {
     transform: scale(1.05); /* 1.05 in order to cover any white stroke effect when shrinking */
     opacity: 1.0; /* I want my image to 'come back to life' when hovering */
 }
+
+/*  ************************************************************************************************************************* */
+/*  section 3: "section-steps" */
+/*  ************************************************************************************************************************* */
+
+.section-steps {
+    background-color: #ebebeb;
+}
+.step-box:first-child {
+    text-align: right; /* text-align works with all the in-line elements, like images, not only with texts */
+    padding-right: 3%;
+}
+
+.step-box:last-child {
+    padding-left: 3%;
+    /* no need to add a 'text-align: left' cause it comes by default */
+    margin-top: 40px;
+}
+
+.app-screen {
+    width: 40%;
+    height: auto;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step div {
+    color: #f56200;
+    border: 1px solid #383838;
+    display: inline-block; /* this won't generate any line break */
+    float: left; /* and this will align all the <div>1</div> with the <p> */
+    height: 50px; /* the height and width is to set the <div> dimension (I can cause the diaplsy is inline-block) */
+    width: 50px;
+    border-radius: 50%; /* this is to make the squared border circular */
+    text-align: center; /* this is to center the contents within */
+    padding: 8px; /* this is to center the number */
+    font-size: 150%; /* number size */
+    font-weight: 200; /* number font weight */
+    margin-right: 25px;
+    margin-top: -5px; /* ME: align numbers and paragraphs*/
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-top: 50px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: none;
+}
+
+/*  ************************************************************************************************************************* */
+/*  section 4: "section-cities" */
+/*  ************************************************************************************************************************* */
+
+.city-feature {
+    text-align: left;
+    line-height: 130%;
+}
+.city-feature img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 130%;
+    color: #f56200;
+    /* to align icons and text */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.city-feature p {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 80%;
+    font-weight: 200;
+}
+
+.city-feature a:link,
+.city-feature a:visited {
+    border-bottom: 1px solid #f56200;
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+    border-bottom: none;
+}
+/*  ************************************************************************************************************************* */
+/*  colors */
+/*  ************************************************************************************************************************* */
+/*
+main orange         #f56200
+secondary orange    #8f3900
+p color             #383838
+*/
