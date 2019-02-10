@@ -1,6 +1,6 @@
-/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  ************************************************************************************************************************* */
 /*  BASIC SETUP */
-/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  ************************************************************************************************************************* */
 
 * {
     margin: 0; /* all the margins and paddings are gone */
@@ -17,9 +17,9 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  ************************************************************************************************************************* */
 /*  REUSABLE COMPONENTS */
-/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  ************************************************************************************************************************* */
 
 .row {
     max-width: 1140px;
@@ -27,8 +27,16 @@ html {
     /* margin: 0 auto; equivalent to the command above (top-bottom: 0, left-right: auto) */
 }
 
-    /*  the class btn style will be shared, while btn-full and btn-ghost will be specific 
-    LINK-VISITED: 'link' and 'visited' provides the same style to both the <a> states (before and after visiting) */
+section {
+  padding: 80px 0px 80px 0px; /* the goal is to create white space but preserving the background color */
+}
+
+/* ------------------------------*/
+/* BUTTONS */
+/* ------------------------------*/
+
+/*  the class btn style will be shared, while btn-full and btn-ghost will be specific
+LINK-VISITED: 'link' and 'visited' provides the same style to both the <a> states (before and after visiting) */
 .btn:link,
 .btn:visited {
     display: inline-block; /* <a> is an in-line element, I need to convert it into a bloc for more customisation */
@@ -38,56 +46,105 @@ html {
     font-weight: 300;
     color: #ffffff; /* "color" on its own refers to the font!!! not to the background */
     transition: background-color 0.2s, border 0.2s, color 0.2s; /* CSS3 for transitions when hovering */
-} 
+}
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #d35400;
-    border: 1px solid #d35400; /* thickness - type - color: I need to add it because the ghost one will be 1px bigger otherwise 
+    background-color: #f56200;
+    border: 1px solid #f56200; /* thickness - type - color: I need to add it because the ghost one will be 1px bigger otherwise
                                     BOX MOODEL: heigth and width of an element is given by: content + padding + margin*/
     margin-right: 15px;
-                                }
+}
 
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #ffffff; /* thickness - type - color */
-    color: #d35400;
+    color: #f56200;
 }
 
-    /*  HOVER-ACTIVE: as well as for link-visited, we should implement some extra style for the hover-active state */
+/*  HOVER-ACTIVE: as well as for link-visited, we should implement some extra style for the hover-active state */
 .btn:hover,
 .btn:active {
-    background-color: #ffb17e;
+    background-color: #8f3900;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    background-color: #ffb17e;
-    border: 1px solid #ffb17e;
+    background-color: #8f3900;
+    border: 1px solid #8f3900;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    background-color: #ffb17e;
-    border: 1px solid #ffb17e;
+    background-color: #8f3900;
+    border: 1px solid #8f3900;
     color: #ffffff;
+}
+
+/* ------------------------------*/
+/* HEADINGS */
+/* ------------------------------*/
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 h1 {
-    margin: 0; /* due to the normalization file, h1 has a top-bottom white stroke we need to get rid of 
-                (the background image does not cover the whpole display size otherwise */
+    margin: 0; /* due to the normalization file, h1 has a top-bottom white stroke we need to get rid of (the background image does not cover the whole  display size otherwise */
     color: #ffffff;
-    font-size: 180%; /* this is relative to the 20px in line 12*/
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 240%; /* this is relative to the 20px in line 12*/
     word-spacing: 4px;
+    margin-top: 0px;
+    margin-bottom: 20px; /* this is to push bottons down a little bit without extending the h1 background */
+    letter-spacing: 1px;
 }
 
+h2 {
+    font-size: 180%; /* this is relative to the 20px in line 12*/
+    word-spacing: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
 
-/*  ------------------------------------------------------------------------------------------------------------------------- */
+h2:after {
+    display: block;
+    content: " "; /* it creates the side-to-side line */
+    width: 100px;
+    height: 2px;
+    background-color: #f56200;
+    margin: 0px auto 0px auto; /* this is for centering purposes */
+    margin-top: 30px; /* this is for creating white space to compensate the h1 margin-bottom: 30px; */
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+/* ------------------------------*/
+/* PARAGRAPHS */
+/* ------------------------------*/
+
+p {
+    color: #383838;
+    font-weight: 200;
+    font-size: 90%;
+}
+
+.long-copy {
+    width: 70%; /* reduce the paragraph style to 70% of the html width. However, it won't be centered anymore */
+    margin-left: 15%; /* Therefore I need to share the remaining 30% width between left and right margin (only the left one is needed) */
+    margin-bottom: 20px;
+    line-height: 150%; /* line interspace */
+}
+
+.box p {
+    line-height: 125%;
+}
+/*  ************************************************************************************************************************* */
 /*  HEADER */
-/*  ------------------------------------------------------------------------------------------------------------------------- */
+/*  ************************************************************************************************************************* */
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
@@ -133,9 +190,63 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     color: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #d35400;
+    border-bottom: 1px solid #f56200;
     transition: color 0.2s, border-bottom 0.2s;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 80%; /* (16px) */
+}
+
+/*  ************************************************************************************************************************* */
+/*  SECTION 1 */
+/*  ************************************************************************************************************************* */
+
+.box {
+    padding: 1%;
+}
+
+.wrapper {
+    text-align: center; /* each element with display: inline-block; will be centered within (see icon-big) */
+}
+.icon-big {
+    font-size: 150%;
+    display: inline-block;
+    color: #f56200;
+    margin-bottom: 5px;
+}
+
+/*  ************************************************************************************************************************* */
+/*  SECTION 2 */
+/*  ************************************************************************************************************************* */
+
+.section-meals {
+    padding: 0px 0px 0px 0px; /* look at the default values @html */
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meals-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden; /* this will null the overflow effect dued to image magnification (1.25) */
+    background-color: #000000; /* this is in order to see the images darkened due to opacity:0.7 */
+}
+.meals-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);/* this will get rid of the white stroke between the two images showcase */
+    transition: transform 0.5s, opacity 0.5s; /* this dictates the transition effects: transform and opacity values will be defined in the img:hover */
+    opacity: 0.7; /* this makes the images look darker (though I need to set the container background-color to black - see above)*/
+}
+.meals-photo img:hover {
+    transform: scale(1.05); /* 1.05 in order to cover any white stroke effect when shrinking */
+    opacity: 1.0; /* I want my image to 'come back to life' when hovering */
 }
