@@ -397,11 +397,19 @@ header {
 }
 
 blockquote {
+    margin-top: 30px;
     padding: 2%;
+    position: relative; /* IMP.!!!: if you want the child class to have position:absolute, you need to give relative here */
 }
 
+/* the following allows to write down the double quotes at the top of the comment */
 blockquote:before {
-    content: "M";
+    content: "\201C";
+    font-size: 350%;
+    display: block; /* so that it could be positioned above the comment, defining top and felt attribute */
+    position: absolute; /* you need it in order to position the element + see parent class position too */
+    top: -35px;
+    left: 0px;
 }
 
 cite {
@@ -413,9 +421,10 @@ cite {
 cite img {
     border-radius: 50%;
     height: 50px;
-    margin: 0px 25px 0px 15px;
+    margin: 0px 25px 0px 5px;
     vertical-align: middle;
 }
+
 /* the following is because I wrap each text section up as a paragraph. <p> will always be displayed as a new block, therefore */
 /* it will be displayed below the image block. To get things aligned back, I add a class and display it in-line */
 .cite {
