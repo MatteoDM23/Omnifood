@@ -179,6 +179,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
     height: 100vh; /* 100% of the view display */
     background-size: cover; /* otherwise set to 'fill' */
+    background-attachment: fixed;
     background-position: center;
 }
 
@@ -377,6 +378,50 @@ header {
 .city-feature a:active {
     border-bottom: none;
 }
+
+/*  ************************************************************************************************************************* */
+/*  section 5: "section-testimonials" */
+/*  ************************************************************************************************************************* */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.section-testimonials p {
+    color: #ffffff;
+    font-style: italic;
+    line-height: 145%;
+}
+
+blockquote {
+    padding: 2%;
+}
+
+blockquote:before {
+    content: "M";
+}
+
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+cite img {
+    border-radius: 50%;
+    height: 50px;
+    margin: 0px 25px 0px 15px;
+    vertical-align: middle;
+}
+/* the following is because I wrap each text section up as a paragraph. <p> will always be displayed as a new block, therefore */
+/* it will be displayed below the image block. To get things aligned back, I add a class and display it in-line */
+.cite {
+    display: inline; 
+}
+
 /*  ************************************************************************************************************************* */
 /*  colors */
 /*  ************************************************************************************************************************* */
