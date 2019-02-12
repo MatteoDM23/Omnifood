@@ -59,16 +59,16 @@ LINK-VISITED: 'link' and 'visited' provides the same style to both the <a> state
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #f56200;
-    border: 1px solid #f56200; /* thickness - type - color: I need to add it because the ghost one will be 1px bigger otherwise
+    background-color: #fc7a23;
+    border: 1px solid #fc7a23; /* thickness - type - color: I need to add it because the ghost one will be 1px bigger otherwise
                                     BOX MOODEL: heigth and width of an element is given by: content + padding + margin*/
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #ffffff; /* thickness - type - color */
-    color: #f56200;
+    border: 1px solid #fc7a23; /* thickness - type - color */
+    color: #fc7a23;
 }
 
 /*  HOVER-ACTIVE: as well as for link-visited, we should implement some extra style for the hover-active state */
@@ -122,7 +122,7 @@ h2:after {
     content: " "; /* it creates the side-to-side line */
     width: 100px;
     height: 2px;
-    background-color: #f56200;
+    background-color: #fc7a23;
     margin: 0px auto 0px auto; /* this is for centering purposes */
     margin-top: 30px; /* this is for creating white space to compensate the h1 margin-bottom: 30px; */
 }
@@ -158,7 +158,7 @@ p {
 
 a:link,
 a:visited {
-    color: #f56200;
+    color: #fc7a23;
     text-decoration: none;
     padding-bottom: 1px;
     transition: opacity 0.2s, border-bottom 0.2s, color 0.2s; /* CSS3 for transitions when hovering */
@@ -167,7 +167,7 @@ a:visited {
 a:active,
 a:hover {
     color: #8f3900;
-    border-bottom: 1px solid #f56200;
+    border-bottom: 1px solid #fc7a23;
     opacity: 0.9;
 }
 
@@ -220,7 +220,7 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     color: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid #f56200;
+    border-bottom: 1px solid #fc7a23;
     transition: color 0.2s, border-bottom 0.2s;
     text-decoration: none;
     text-transform: uppercase;
@@ -241,7 +241,7 @@ header {
 .icon-big {
     font-size: 150%;
     display: inline-block;
-    color: #f56200;
+    color: #fc7a23;
     margin-bottom: 5px;
 }
 
@@ -310,7 +310,7 @@ header {
 }
 
 .work-step div {
-    color: #f56200;
+    color: #fc7a23;
     border: 1px solid #383838;
     display: inline-block; /* this won't generate any line break */
     float: left; /* and this will align all the <div>1</div> with the <p> */
@@ -355,7 +355,7 @@ header {
     width: 30px;
     text-align: center;
     font-size: 130%;
-    color: #f56200;
+    color: #fc7a23;
     /* to align icons and text */
     line-height: 120%;
     vertical-align: middle;
@@ -371,7 +371,7 @@ header {
 
 .city-feature a:link,
 .city-feature a:visited {
-    border-bottom: 1px solid #f56200;
+    border-bottom: 1px solid #fc7a23;
 }
 
 .city-feature a:hover,
@@ -421,7 +421,7 @@ cite {
 cite img {
     border-radius: 50%;
     height: 50px;
-    margin: 0px 25px 0px 5px;
+    margin: 0px 25px 0px 5px; /* this will push the customer's credentials a bit further away to the right */
     vertical-align: middle;
 }
 
@@ -432,10 +432,52 @@ cite img {
 }
 
 /*  ************************************************************************************************************************* */
+/*  section 6: "section-testimonials" */
+/*  ************************************************************************************************************************* */
+
+.section-plans {
+    background-color: #ebebeb;
+}
+
+.plan-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #fc7a23;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-price span {
+    font-size: 30%; /* this is based on the parent class font-size, that here is already 300%. Hence, 30% to get back to 100% */
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box {
+    padding: 5px 0px 5px 0px;
+}
+/*  ************************************************************************************************************************* */
 /*  colors */
 /*  ************************************************************************************************************************* */
 /*
 main orange         #f56200
 secondary orange    #8f3900
 p color             #383838
+background grey     #ebebeb
 */
