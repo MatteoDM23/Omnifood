@@ -547,24 +547,24 @@ footer {
 }
 
 .footer-nav {
-    list-style: none;
-    float: left;
+    list-style: none; /* it removes the bullet points but it keeps the onordered list */
+    float: left;    /* pushes all the element to the left */
 }
 
 .social-links {
-    list-style: none;
-    float: right;
+    list-style: none; /* it removes the bullet points but it keeps the onordered list */
+    float: right; /* pushes all the element to the right */
 }
 
 .footer-nav li,
 .social-links li {
-    display: inline-block;
-    margin-right: 20px;
+    display: inline-block; /* here is to align all the elements of the list */
+    margin-right: 20px; /* this will generate some extra space between the li elements */
 }
 
 .footer-nav li:last-child,
 .social-links li:last-child {
-    margin-right: 0;
+    margin-right: 0; /* the last element on the right will have 20px margin right from hte previous command. This is to get rid of that extra margin */
 }
 
 .footer-nav li a:link,
