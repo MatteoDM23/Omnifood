@@ -277,7 +277,7 @@ header {
     height: auto;
     transform: scale(1.25);/* this will get rid of the white stroke between the two images showcase */
     transition: transform 0.5s, opacity 0.5s; /* this dictates the transition effects: transform and opacity values will be defined in the img:hover */
-    opacity: 0.7; /* this makes the images look darker (though I need to set the container background-color to black - see above)*/
+    opacity: 0.5; /* this makes the images look darker (though I need to set the container background-color to black - see above)*/
 }
 .meals-photo img:hover {
     transform: scale(1.05); /* 1.05 in order to cover any white stroke effect when shrinking */
@@ -313,14 +313,14 @@ header {
 
 .work-step div {
     color: #fc9e23;
-    border: 1px solid #383838;
+    border: 1px solid #fc9e23;
     display: inline-block; /* this won't generate any line break */
     float: left; /* and this will align all the <div>1</div> with the <p> */
     height: 50px; /* the height and width is to set the <div> dimension (I can cause the diaplsy is inline-block) */
     width: 50px;
     border-radius: 50%; /* this is to make the squared border circular */
     text-align: center; /* this is to center the contents within */
-    padding: 8px; /* this is to center the number */
+    padding: 5px; /* this is to center the number */
     font-size: 150%; /* number size */
     font-weight: 200; /* number font weight */
     margin-right: 25px;
