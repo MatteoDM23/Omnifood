@@ -1,19 +1,78 @@
-/* small mobiles (from 0px to 480px, which is the size of an iPhone) */
-@media only screen and (max-width: 480px) {
-
+/* --- width < 1201px --- */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {max-width: 100%;padding: 0 2% 0 2%;}
+    .row {padding: 0 2% 0 2%;}
+    /*  section 1: "section-features" */
+    html {font-size: 19px;}
+    /*  section 6: "section-plans" */
+    .plan-box li {font-size: 80%;}
 }
 
-/* from iPhone to small tablets (from 481px to 767px, with 768px being the size of an iPad) */
+@media only screen and (max-width: 1102px) {
+    .wrapper h3 {font-size: 95%;font-weight:300;}
+}
+
+@media only screen and (max-width: 1097px) {
+    h1 {font-size: 170%;}
+}
+
+@media only screen and (max-width: 1035px) {
+    .plan-box li {font-size: 70%;}
+}
+
+
+
+
+/* --- width < 1024px --- */
+@media only screen and (max-width: 1023px) {
+    /* global */
+    html {font-size: 18px;}
+    section {padding: 40px 0px 40px 0px;}
+    h1 {font-size: 180%;}
+    a {font-size: 90%;}
+    .row {}
+    /* header */
+    .main-nav li {margin-left: 30px; font-size: 90%; }
+    .hero-text-box {max-width: 100%; padding: 0 2% 0 2%;}
+    .btn:link, .btn:visited, input[type=submit] {padding: 10px 25px 10px 25px;}
+    /* section 1: "section-features" */
+    .wrapper {padding: 3%;}
+    /* section 3: "section-steps" */
+    .app-screen {width: 45%;}
+    .btn-app img {margin-top: 10%; margin-right: 10px;}
+    .work-step div {padding-top:10px; margin-right: 15px; font-size:130%;}
+    .step-box:first-child {
+    text-align: right; /* text-align works with all the in-line elements, like images, not only with texts */
+    padding-right: 5%;
+}
+    .step-box:last-child {padding-left: 0;}
+    /*  section 4: "section-cities" */
+    .city-feature {line-height: 110%;}
+    .wrapper h3 {font-size: 100%;}
+    .city-feature p {display: inline-block; margin-left: 5px; font-size: 75%;}
+    .icon-small {width: 20px; font-size: 110%;}
+    /*  section 6: "section-plans" */
+    .plan-box h3 {margin-bottom: 10px;}
+    .plan-price {font-size: 260%;}
+    .plan-price-meal {font-size: 75%;}
+    .plan-box li {font-size: 70%;}
+    .plan-box div {padding: 20px 0px 20px 20px;}
+    /*  section 7: "section-form" */
+    .section-form {width: 80%; font-size: 90%;}
+    /*  footer */
+    .footer-nav li, .social-links li {margin-right: 10px;}
+}
+
+@media only screen and (max-width: 817px) {
+    .plan-box div {padding: 20px 0px 20px 10px;}
+}
+
+
+/* --- width < 768px --- */
 @media only screen and (max-width: 767px) {
 
 }
-
-/* from iPad to tablets in portrait mode (from 768px to 1023px, with 1024px being the size of an iPad in portrait mode) */
-@media only screen and (max-width: 1023px) {
-
-}
-
-/* from tablets in portrait mode to pixel row (from 1024px to 1200px, even if my row width was 1140px) */
-@media only screen and (max-width: 400px) {
+/* small mobiles (from 0px to 480px, which is the size of an iPhone 4) */
+@media only screen and (max-width: 480px) {
 
 }
