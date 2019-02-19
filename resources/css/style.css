@@ -252,6 +252,7 @@ header {
     background-color: rgba(255,255,255,0.9);
     box-shadow: 0 2px 2px #f0f0f0;
     font-weight: 300;
+    z-index: 9999; /* z-index will assure my element to be at the top of any other (bar must be above the food images) */
 }
 
 .sticky .main-nav li a:link,
