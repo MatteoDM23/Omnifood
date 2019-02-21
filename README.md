@@ -14,5 +14,5 @@ The webpage can be accessed at https://matteodm23.github.io/Omnifood/.<br>
 ### Screenshots
 The followings are a few screenshots from the webpage interface.<br><br>
 ![Omnifood_homepage](Omnifood_homepage.png)
-![Omnifood_screenshot_2] (Omnifood_screenshot_2.png)
-![Omnifood_screenshot_3] (Omnifood_screenshot_3.png)
+![Omnifood_screenshot_2](Omnifood_screenshot_2.png)
+![Omnifood_screenshot_3](Omnifood_screenshot_3.png)
