@@ -4,7 +4,7 @@ This one-page website is divided in several section with text paragraphs, images
 The webpage is **fully responsive** and it renders well on a variety of devices.<br>
 
 ### Built with
-* HTML5
+* [HTML5](https://en.wikipedia.org/wiki/HTML5/)
 * CSS3
 * jQuery
 
