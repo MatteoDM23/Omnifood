@@ -5,8 +5,8 @@ The webpage is **fully responsive** and it renders well on a variety of devices.
 
 ### Built with
 * [HTML5](https://en.wikipedia.org/wiki/HTML5/)
-* CSS3
-* jQuery
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3/)
+* [jQuery](https://en.wikipedia.org/wiki/JQuery/)
 
 ### Accessibility
 The webpage can be accessed at https://matteodm23.github.io/Omnifood/.<br>
