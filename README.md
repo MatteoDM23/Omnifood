@@ -12,7 +12,7 @@ The webpage is **fully responsive** and it renders well on a variety of devices.
 The webpage can be accessed at https://matteodm23.github.io/Omnifood/.<br>
 
 ### Screenshots
-The followings are a few screenshots from the webpage interface.<br><br>
+The followings are a few screenshots of the webpage interface.<br><br>
 ![Omnifood_homepage](Omnifood_homepage.png)
 <br><br>
 ![Omnifood_screenshot_2](Omnifood_screenshot_2.png)
