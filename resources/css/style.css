@@ -243,6 +243,20 @@ header {
     text-transform: uppercase;
     font-size: 80%; /* (16px) */
 }
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* sticky navigation bar */
 .sticky {
     position: fixed;
@@ -683,8 +697,12 @@ footer p {
 .js--wp-3 {
     opacity: 0; /* this is to keep the element not visible (display:hidden would get rido of it too) */
                 /* note that the js--wp-4 is not included due to the animation not being a fadeIn */
+    animation-duration: 1s;
 }
 
+.js--wp-4 {
+    animation-duration: 1s;
+}
 .js--wp-1.animated,
 .js--wp-2.animated,
 .js--wp-3.animated {
