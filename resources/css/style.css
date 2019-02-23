@@ -676,6 +676,22 @@ footer p {
 }
 
 /*  ************************************************************************************************************************* */
+/*  animations */
+/*  ************************************************************************************************************************* */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0; /* this is to keep the element not visible (display:hidden would get rido of it too) */
+                /* note that the js--wp-4 is not included due to the animation not being a fadeIn */
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity :1; /* classes happening at the same time (here is why no spaces in between classes declaration) */
+}
+
+/*  ************************************************************************************************************************* */
 /*  colors */
 /*  ************************************************************************************************************************* */
 /*

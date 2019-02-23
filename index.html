@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,200,200i,300,300i,400,400i,500,500i" rel="stylesheet">
@@ -18,10 +19,10 @@
           <img src="resources/images/logo-white.png" alt="Omnifood Logo" class="logo">
           <img src="resources/images/logo.png" alt="Omnifood Logo" class="logo-black">
           <ul class="main-nav">
-            <li><a href="#">Food Delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our Cities</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="#features">Food Delivery</a></li>
+            <li><a href="#steps">How it works</a></li>
+            <li><a href="#cities">Our Cities</a></li>
+            <li><a href="#form">Sign Up</a></li>
           </ul>
         </div>
       </nav>
@@ -33,7 +34,7 @@
       </div>
     </header>
     <!-- section 1: "section-features" -->
-    <section class="section-features js--section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">
@@ -42,7 +43,7 @@
         So let us take care of that, we’re really good at it, we promise!
         </p>
       </div>
-      <div class="row">
+      <div class="row js--wp-1">
         <div class="col span-1-of-4 box">
           <div class="wrapper">
             <i class="ion-ios-infinite icon-big"></i>
@@ -121,13 +122,13 @@
       </ul>
     </section>
     <!-- section 3: "section-steps" -->
-    <section class="section-steps">
+    <section class="section-steps" id="steps">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3.</h2>
       </div>
       <div class="row">
         <div class="col span-1-of-2 step-box">
-          <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+          <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
         </div>
         <div class="col span-1-of-2 step-box">
           <div class="work-step">
@@ -148,11 +149,11 @@
       </div>
     </section>
     <!-- section 4: "section-cities" -->
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities.</h2>
         </div> 
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <div class="wrapper">
                     <div class="city-feature">
@@ -271,7 +272,7 @@
       </div>
       <div class="row">
         <div class="col span-1-of-3">
-          <div class="plan-box"> <!-- this <div> allows make changes to the box without affecting the .col class (like width, background-color, etc.)-->
+          <div class="plan-box js--wp-4"> <!-- this <div> allows make changes to the box without affecting the .col class (like width, background-color, etc.)-->
             <div>
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>/ month</span></p>
@@ -333,7 +334,7 @@
       </div>
     </section>
     <!-- section 7: "section-form" -->
-    <section class="section-form">
+    <section class="section-form" id="form">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
