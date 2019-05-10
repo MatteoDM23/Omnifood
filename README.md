@@ -1,4 +1,4 @@
-# Omnifood: no more junk food
+# WEBPAGE - Omnifood: no more junk food
 
 This one-page website is divided in several section with text paragraphs, images and animations and provides an elegant and concise description of an imaginery food delivery company.<br><br>
 The webpage is **fully responsive** and it renders well on a variety of devices.<br>
