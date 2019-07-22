@@ -9,7 +9,7 @@ The webpage is **fully responsive** and it renders well on a variety of devices.
 * [jQuery](https://en.wikipedia.org/wiki/JQuery/)
 
 ### Accessibility
-The webpage can be accessed at https://matteodm23.github.io/Omnifood/.<br>
+The webpage can be accessed at https://matteodm23.github.io/WEBPAGE--Omnifood/.<br>
 
 ### Screenshots
 The followings are a few screenshots of the webpage interface.<br><br>
